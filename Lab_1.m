@@ -43,18 +43,13 @@ D == 5 % (creates a matrix with '1' as the 5th element in a 3x3 matrix)
 %0 1 0
 %0 0 0
 
-
-
 %% Trigonometric functions
 
-x = 0: 0.01: 359 % sin curve (in radians)
-x = 0: 0.01: 359 * 2 pi % smoother sin curve (in degrees)
-x = 0: 1: 359 * pi/180 % rougher sin curve (in degrees but with less accurate points)
+% x = 0: 1: 359 * pi / 180 % rougher sin curve (in degrees but with less accurate points)
+x = 0: 0.01: 359 * pi / 180 % smooth sin curve (in degrees but with more accurate points)
 
 y = sin(x)
 plot(x, y)
-
-
 
 %% Roots of Algebraic equations
 
@@ -73,15 +68,15 @@ roots(answerOne)
 
 a = [2 1; 1 4]
 b = [8; 15]
-answerTwo = a\b
+answerTwo = a \ b
 disp('The solution of x and y is:');
-disp(solution);
+disp(answerTwo);
 
 
 % Q.3 Solution
 
 a = [1 2 1; 3 1 2; 1 -3 4]
 b = [10; 20; 15]
-answerThree = a\b
+answerThree = a \ b
 disp('The solution of x,y and z is:');
-disp(solution);
+disp(answerThree);
