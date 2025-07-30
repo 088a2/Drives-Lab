@@ -3,13 +3,14 @@
 % MATLAB code to test various matrix, trigonometric functions and roots of algebraic equations
 %#ok<*NOPTS>
 %#ok<*IJCL> 
+
 %% Matrix operations
 
 C = [1 2; 4 5; 5 6; 12 2] * [1 2 4 5; 3 4 5 6] % creates a row matrix
 D = [1; 2; 6; 4] % creates a column matrix
 
 rank(C) % gives the rank of the specific matrix - a rank of a matrix is basically determinant of that matrix
-zeros(4, 5) % gives an output mtrix with all zeroes
+zeros(4, 5) % gives an output matrix with all zeroes
 ones(4, 3) % gives an output matrix with all ones
 
 % twos(2, 1) not correct
@@ -53,7 +54,7 @@ plot(x, y)
 
 
 
-%% Roots of algebraic equations
+%% Roots of Algebraic equations
 
 % Q.1 Solution
 
@@ -82,4 +83,3 @@ b = [10; 20; 15]
 answerThree = a\b
 disp('The solution of x,y and z is:');
 disp(solution);
-
