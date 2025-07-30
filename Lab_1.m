@@ -1,6 +1,8 @@
-% testmatlab.m
+% Lab_1.m
 % Lab-1 | Date: 30-07-2025
+
 % MATLAB code to test various matrix, trigonometric functions and roots of algebraic equations
+
 %#ok<*NOPTS>
 %#ok<*IJCL> 
 
