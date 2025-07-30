@@ -1,25 +1,24 @@
 % testmatlab.m
-% Date: 30-07-2025
-% Drives Lab Class 1
+% Lab-1 | Date: 30-07-2025
 % MATLAB code to test various matrix, trigonometric functions and roots of algebraic equations
 %#ok<*NOPTS>
 %#ok<*IJCL> 
 %% Matrix operations
 
-C = [1 2; 4 5; 5 6; 12 2] * [1 2 4 5; 3 4 5 6]
-D = [1; 2; 6; 4]
+C = [1 2; 4 5; 5 6; 12 2] * [1 2 4 5; 3 4 5 6] % creates a row matrix
+D = [1; 2; 6; 4] % creates a column matrix
 
-rank(C)
-zeros(4, 5)
-ones(4, 3)
+rank(C) % gives the rank of the specific matrix - a rank of a matrix is basically determinant of that matrix
+zeros(4, 5) % gives an output mtrix with all zeroes
+ones(4, 3) % gives an output matrix with all ones
 
 % twos(2, 1) not correct
 T = ones(2, 2) * 2
 
-% Igon matrices
-eye(5, 5)
+% Identity Matrix
+eye(5, 5) % creates a 5x5 identity matrix
 
-% Matrices can be in complex form
+% Matrices can be in Complex Equation form
 % i = imaginary unit (complex unit)
 
 ai = [1 + i 2 + 3 + i]
@@ -27,16 +26,21 @@ bi = [1 + 2 * i; 3 + 4 * i; 5 + 6 * i]
 
 S = ["John" "Doe"; "Ram " "Singh"]
 
-% Quotation of matrices
-D > 5 (creates a matrix with all '1' after onwards the 5th element in a 3x3 matrix)
-0 0 0
-0 0 1
-1 1 1
 
-D == 5 (creates a matrix with '1' as the 5th element in a 3x3 matrix) 
-0 0 0
-0 1 0
-0 0 0
+
+% Quotation of matrices
+
+D > 5 % (creates a matrix with all '1' after onwards the 5th element in a 3x3 matrix)
+%0 0 0
+%0 0 1
+%1 1 1
+
+D == 5 % (creates a matrix with '1' as the 5th element in a 3x3 matrix) 
+%0 0 0
+%0 1 0
+%0 0 0
+
+
 
 %% Trigonometric functions
 
@@ -47,9 +51,11 @@ x = 0: 1: 359 * pi/180 % rougher sin curve (in degrees but with less accurate po
 y = sin(x)
 plot(x, y)
 
+
+
 %% Roots of algebraic equations
 
-% Q.1 Solve x^2 - 5x + 4 = 0, Find the roots.
+% Q.1 Solution
 
 % Method One - Manual Calculation without in-built 'roots' command
 answerOne1 = (-(-5) + sqrt((-5)^2 - 4 * 1 * 4)) / (2 * 1)
@@ -59,20 +65,17 @@ answerOne2 = (-(-5) - sqrt((-5)^2 - 4 * 1 * 4)) / (2 * 1)
 answerOne = [1 -5 4]
 roots(answerOne)
 
-% Q.2 Solve the set of equations to find x & y:
-%   2x + y = 8
-%   x + 4y = 15
+
+% Q.2 Solution
 
 a = [2 1; 1 4]
 b = [8; 15]
 answerTwo = a\b
-disp('The solution of x,y and z is:');
+disp('The solution of x and y is:');
 disp(solution);
 
-% Q.3 Solve the system of equations to find x, y & z:
-%   x + 2y + z = 10
-%   3x + y + 2z = 20
-%   x - 3y + 4z = 15
+
+% Q.3 Solution
 
 a = [1 2 1; 3 1 2; 1 -3 4]
 b = [10; 20; 15]
