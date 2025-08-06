@@ -1,6 +1,6 @@
 ## Lab - 2
 
-Plotting 3-phase sine wave in MATLAB and creating basic RLC circuits & control systems in Simulink.
+> Plotting 3-phase sine wave in MATLAB and creating basic RLC circuits & control systems in Simulink.
 
 ```
 Lab_2.m – generates 3-phase sine wave plot
