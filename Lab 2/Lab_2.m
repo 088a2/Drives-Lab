@@ -19,5 +19,3 @@ ylabel('Amplitude')
 title("230929228-Mrinal-3-Phase-Sine-Graph")
 
 grid on
-
-%% 
