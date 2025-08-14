@@ -1,4 +1,4 @@
-## Lab - 
+## Lab - 3
 
 > Open loop control of DC-DC converters: Buck and Boost
 Simulation and analysis using MATLAB/Simulink with switching devices
